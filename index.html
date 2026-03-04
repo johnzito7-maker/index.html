@@ -1,146 +1,133 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Imperial</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imperial Service EXP & Bestiário</title>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      background: linear-gradient(to bottom, #1a1a1a, #000000);
+      color: #f5e6c8;
+      text-align: center;
+    }header {
+  padding: 60px 20px;
+  background: url('https://images.unsplash.com/photo-1604079628040-94301bb21b91?q=80&w=2070') center/cover no-repeat;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background: black;
-    color: white;
-    overflow-x: hidden;
+header h1 {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px black;
 }
 
-/* BANNER */
-.hero {
-    height: 100vh;
-    background: 
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-    url('https://images.unsplash.com/photo-1507679799987-c73779587ccf');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    animation: fadeIn 2s ease-in-out;
+header p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  border-radius: 10px;
 }
 
-.hero-content {
-    animation: slideUp 1.5s ease;
-}
-
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 70px;
-    letter-spacing: 8px;
-    color: gold;
-    text-shadow: 0 0 25px rgba(255,215,0,0.6);
-}
-
-.hero p {
-    margin-top: 20px;
-    font-size: 20px;
-    letter-spacing: 2px;
-}
-
-.botao {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 18px 50px;
-    background: linear-gradient(45deg, gold, #d4af37);
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: 0.4s ease;
-    box-shadow: 0 0 20px rgba(255,215,0,0.5);
-}
-
-.botao:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 40px rgba(255,215,0,0.9);
-}
-
-/* SEÇÃO */
 .section {
-    padding: 100px 20px;
-    text-align: center;
-    background: #0d0d0d;
+  padding: 50px 20px;
 }
 
-.section h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+.card {
+  background: #111;
+  margin: 20px auto;
+  padding: 30px;
+  max-width: 500px;
+  border: 2px solid #c9a227;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(201,162,39,0.5);
 }
 
-.section p {
-    max-width: 600px;
-    margin: auto;
-    line-height: 1.6;
-    opacity: 0.8;
+h2 {
+  color: #c9a227;
+  margin-bottom: 20px;
 }
 
-/* ANIMAÇÕES */
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
 }
 
-@keyframes slideUp {
-    from {transform: translateY(40px); opacity: 0;}
-    to {transform: translateY(0); opacity: 1;}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: #c9a227;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e6c65c;
 }
 
 footer {
-    padding: 30px;
-    text-align: center;
-    background: black;
-    font-size: 14px;
-    opacity: 0.6;
+  padding: 20px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  background: #000;
 }
 
-@media(max-width:768px){
-    .hero h1 {
-        font-size: 42px;
-    }
-}
-</style>
+  </style>
 </head>
-
-<body>
-
-<section class="hero">
-    <div class="hero-content">
-        <h1>IMPERIAL</h1>
-        <p>Serviço exclusivo para o Rubinot</p>
-        <a class="botao" href="https://wa.me/SEUNUMEROAQUI" target="_blank">
-            Falar no WhatsApp
-        </a>
-    </div>
-</section>
-
-<section class="section">
-    <h2>Atendimento Premium</h2>
-    <p>
-        Sofisticação, discrição e excelência em cada detalhe.
-        Uma experiência pensada para quem exige o mais alto padrão.
-    </p>
-</section>
-
-<footer>
-    © 2026 Imperial - Todos os direitos reservados
-</footer>
-
-</body>
+<body><header>
+  <h1>SERVICE EXP & BESTIÁRIO</h1>
+  <p>
+    Serviço profissional de experiência (EXP) e bestiário para todas as vocações,
+    exceto Monk. Atendemos todos os servidores, menos Retro PvP.
+    Evolua seu personagem com segurança, eficiência e dedicação total.<br><br><strong style="color:#ffd700; font-size:20px;">★ Serviço exclusivo para o Rubinot ★</strong>
+  </p>
+  <a class="btn" href="https://wa.me/5582988158757" target="_blank">Falar no WhatsApp</a>
+</header><section class="section">
+  <div class="card">
+    <h2>⚔ Service de EXP</h2>
+    <ul>
+      <li>✔ Up rápido e seguro</li>
+      <li>✔ Rotas otimizadas</li>
+      <li>✔ Máxima eficiência</li>
+      <li>✔ Relatório de progresso</li>
+      <li>✔ Todas vocações (menos Monk)</li>
+    </ul>
+  </div>  <div class="card">
+    <h2>🐉 Bestiário Completo</h2>
+    <ul>
+      <li>✔ Pontos de charme</li>
+      <li>✔ Caçadas organizadas</li>
+      <li>✔ Estratégias eficientes</li>
+      <li>✔ Open PvP e Non PvP</li>
+    </ul>
+  </div>
+</section><section class="section">
+  <h2>Por que escolher nosso serviço?</h2>
+  <p style="max-width: 800px; margin: auto; line-height: 1.8;">
+    Trabalhamos com responsabilidade, descrição e compromisso com resultados.
+    Nosso objetivo é entregar evolução rápida e segura para sua conta,
+    garantindo dedicação total durante o período contratado.
+  </p>
+</section><section class="section" style="background: linear-gradient(to right, #0f0f0f, #1a1a1a); border-top:2px solid #c9a227; border-bottom:2px solid #c9a227;">
+  <h2 style="font-size:32px;">📜 Contato Imperial</h2>
+  <p style="font-size: 26px; font-weight: bold; color: #25D366; margin-top:20px;">
+    📞 (82) 98815-8757
+  </p>
+  <a class="btn" style="background:#25D366; margin-top:25px;" href="https://wa.me/5582988158757" target="_blank">
+    ⚔ Falar Diretamente no WhatsApp
+  </a>
+  <p style="margin-top:15px; font-size:14px; opacity:0.8;">
+    Atendimento rápido e direto. Clique no botão e fale agora.
+  </p>
+</section><footer>
+  © 2026 Imperial Service EXP & Bestiário - Todos os direitos reservados.
+</footer></body>
 </html>
